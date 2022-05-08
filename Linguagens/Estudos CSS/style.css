@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* background-image: url(img/pexels-eberhard-grossgasteiger-1287145.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed; */
+    background: url(img/pexels-eberhard-grossgasteiger-1287145.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto; 
+}
+
+.form input {
+    width: 50%;
+}
+
+.form button {
+    width: 15%;
+}
