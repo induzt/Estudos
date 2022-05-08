@@ -21,7 +21,7 @@
             <li><a href="mailto:santossilva.and@gmail.com">E-mail</a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/anderson-s-silva/">Linkedin</a></li>
             <!-- modelo de link para whats -->
-            <li><a target="_blank" href="https://wa.me/dddnnnnnnnnn">Whats App</a></li>
+            <li><a target="_blank" href="https://wa.me/dddnnnnnnnnn">WhatsApp</a></li>
         </ul>
     </header>
     <main>
@@ -31,11 +31,11 @@
                 <h5>Full Stack Developer</h5>
             </div>
 
-            <div id="arrow">
-                <i class="fa-solid fa-sort-down"></i>
+            <div onclick="displayAbout()"  id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
             </div>
 
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non ipsa eveniet consequatur. Sint possimus eos quia nam minus ullam, quae soluta ut doloremque nemo, dolorum sunt quibusdam illo enim.
                 </p>
@@ -53,5 +53,13 @@
         </section>
     </main>
 
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
